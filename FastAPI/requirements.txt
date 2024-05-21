@@ -1,0 +1,5 @@
+fastapi
+pyodbc
+pydantic
+bcrypt
+python-jose
