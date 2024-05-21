@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddProdActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="232dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792"
+        app:srcCompat="@drawable/circle2" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="324dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446"
+        app:srcCompat="@drawable/circle1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="268dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221"
+        app:srcCompat="@drawable/circle2" />
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tierraVivaTitle"
+        android:layout_width="410dp"
+        android:layout_height="47dp"
+        android:foregroundTint="#1C9708"
+        android:text="TIERRA VIVA"
+        android:textAlignment="center"
+        android:textColor="#1C9708"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/pub_prod_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="187dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.167"
+                app:srcCompat="@drawable/logo_app" />
+
+            <TextView
+                android:id="@+id/registerSesionText"
+                android:layout_width="325dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="Registrar Producto"
+                android:textColor="#474747"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/nombreProdTextOut"
+                android:layout_width="348dp"
+                android:layout_height="32dp"
+                android:text="Nombre del producto"
+                android:textColor="#474747"
+                android:textSize="23sp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/inputPrdName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.143"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerSesionText"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/nodocTextOut"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageViewLastname1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_btn_text"
+                    tools:ignore="DuplicateIds" />
+
+                <EditText
+                    android:id="@+id/inputProdName"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/text_font_box"
+                    android:ems="10"
+                    android:hint=" Ingrese el nombre del producto"
+                    android:inputType="text"
+                    android:textColor="#474747"
+                    android:textColorHint="#878787"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewLastname1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.72"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewLastname1"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewLastname1"
+                    app:layout_constraintVertical_bias="0.463" />
+
+                <ImageView
+                    android:id="@+id/imageViewNewUser"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewLastname1"
+                    app:layout_constraintEnd_toEndOf="@+id/imageViewLastname1"
+                    app:layout_constraintStart_toStartOf="@+id/imageViewLastname1"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewLastname1"
+                    app:srcCompat="@drawable/user_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <TextView
+                android:id="@+id/nodocTextOut"
+                android:layout_width="348dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="32dp"
+                android:text="Precio"
+                android:textColor="#474747"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toTopOf="@+id/inputLastName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.145"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerSesionText"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/nodocTextOut"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageValProd"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_btn_text" />
+
+                <EditText
+                    android:id="@+id/inputValProd"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/text_font_box"
+                    android:ems="10"
+                    android:hint=" Ingrese el valor del producto"
+                    android:inputType="number"
+                    android:textColor="#474747"
+                    android:textColorHint="#878787"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageValProd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.72"
+                    app:layout_constraintStart_toEndOf="@+id/imageValProd"
+                    app:layout_constraintTop_toTopOf="@+id/imageValProd"
+                    app:layout_constraintVertical_bias="0.797" />
+
+                <ImageView
+                    android:id="@+id/imageValIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageValProd"
+                    app:layout_constraintEnd_toEndOf="@+id/imageValProd"
+                    app:layout_constraintStart_toStartOf="@+id/imageValProd"
+                    app:layout_constraintTop_toTopOf="@+id/imageValProd"
+                    app:srcCompat="@drawable/value_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tipoProdTextOut"
+                android:layout_width="348dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="32dp"
+                android:text="Categoría"
+                android:textColor="#474747"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toTopOf="@+id/spinner_docs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.143"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerSesionText"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Spinner
+                android:id="@+id/spinner_categories"
+                android:layout_width="348dp"
+                android:layout_height="48dp"
+                android:background="@drawable/text_font_box"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.684"/>
+
+            <TextView
+                android:id="@+id/tipoMedida"
+                android:layout_width="348dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="32dp"
+                android:text="Unidad de medida"
+                android:textColor="#474747"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toTopOf="@+id/spinner_docs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.143"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerSesionText"
+                app:layout_constraintVertical_bias="1.0" />
+            <Spinner
+                android:id="@+id/spinner_measures"
+                android:layout_width="348dp"
+                android:layout_height="48dp"
+                android:background="@drawable/text_font_box"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.684"/>
+
+            <TextView
+                android:id="@+id/apellidosTextOut"
+                android:layout_width="348dp"
+                android:layout_height="32dp"
+                android:text="Cantidad"
+                android:textColor="#474747"
+                android:textSize="23sp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/inputNoDoc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.145"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerSesionText"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/apellidosTextOut"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageNoDoc"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_btn_text" />
+
+                <EditText
+                    android:id="@+id/inputQuantity"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/text_font_box"
+                    android:ems="10"
+                    android:hint=" Ingrese la cantidad de unidades"
+                    android:inputType="number"
+                    android:textColor="#474747"
+                    android:textColorHint="#878787"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageNoDoc"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.72"
+                    app:layout_constraintStart_toEndOf="@+id/imageNoDoc"
+                    app:layout_constraintTop_toTopOf="@+id/imageNoDoc"
+                    app:layout_constraintVertical_bias="0.797" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageNoDoc"
+                    app:layout_constraintEnd_toEndOf="@+id/imageNoDoc"
+                    app:layout_constraintStart_toStartOf="@+id/imageNoDoc"
+                    app:layout_constraintTop_toTopOf="@+id/imageNoDoc"
+                    app:srcCompat="@drawable/quantity_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/locationPrdTextOut"
+                android:layout_width="348dp"
+                android:layout_height="31dp"
+                android:text="Ubicación"
+                android:textColor="#474747"
+                android:textSize="23sp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner_prod_locations"
+                android:layout_width="348dp"
+                android:layout_height="48dp"
+                android:background="@drawable/text_font_box"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.684"/>
+
+            <TextView
+                android:id="@+id/descTextOut"
+                android:layout_width="348dp"
+                android:layout_height="31dp"
+                android:text="Descripcion"
+                android:textColor="#474747"
+                android:textSize="23sp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputDescription"
+                android:layout_width="348dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/text_font_box"
+                android:ems="10"
+                android:layout_marginBottom="10dp"
+                android:hint=" Ingrese el nombre del producto"
+                android:inputType="text"
+                android:textColor="#474747"
+                android:textColorHint="#878787"
+                app:layout_constraintBottom_toBottomOf="@+id/parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/parent"
+                app:layout_constraintTop_toTopOf="@+id/parent" />
+
+            <TextView
+                android:id="@+id/selectImgTextOut"
+                android:layout_width="348dp"
+                android:layout_height="31dp"
+                android:text="Imagen del producto"
+                android:textColor="#474747"
+                android:textSize="23sp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/sel_img_btn"
+                android:layout_width="348dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_rounded_press"
+                android:text="Seleccionar imagen"
+                android:textColor="#D5F8D4"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_selected"
+                android:layout_width="348dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/sel_img_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/pub_prod_btn"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_rounded_press"
+        android:text="Registrar Producto"
+        android:textColor="#D5F8D4"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

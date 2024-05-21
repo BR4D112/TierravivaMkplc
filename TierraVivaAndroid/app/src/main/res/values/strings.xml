@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TierraVivaMarketPlace</string>
+    <string name="items_lbl">Seleccionar</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+</resources>

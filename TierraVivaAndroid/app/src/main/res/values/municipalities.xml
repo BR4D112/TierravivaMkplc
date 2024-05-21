@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="boy_muni">
+        <item>Almeida</item>
+        <item>Aquitania</item>
+        <item>Arcabuco</item>
+        <item>Belén</item>
+        <item>Berbeo</item>
+        <item>Betéitiva</item>
+        <item>Boavita</item>
+        <item>Boyacá</item>
+        <item>Briceño</item>
+        <item>Buenavista</item>
+        <item>Busbanzá</item>
+        <item>Caldas</item>
+        <item>Campohermoso</item>
+        <item>Cerinza</item>
+        <item>Chinavita</item>
+        <item>Chiquinquirá</item>
+        <item>Chiscas</item>
+        <item>Chita</item>
+        <item>Chitaraque</item>
+        <item>Chivatá</item>
+        <item>Chivor</item>
+        <item>Ciénega</item>
+        <item>Cómbita</item>
+        <item>Coper</item>
+        <item>Corrales</item>
+        <item>Covarachía</item>
+        <item>Cubará</item>
+        <item>Cucaita</item>
+        <item>Cuítiva</item>
+        <item>Duitama</item>
+        <item>El Cocuy</item>
+        <item>El Espino</item>
+        <item>Firavitoba</item>
+        <item>Floresta</item>
+        <item>Gachantivá</item>
+        <item>Gameza</item>
+        <item>Garagoa</item>
+        <item>Guacamayas</item>
+        <item>Guateque</item>
+        <item>Guayatá</item>
+        <item>Guicán</item>
+        <item>Iza</item>
+        <item>Jenesano</item>
+        <item>Jericó</item>
+        <item>La Capilla</item>
+        <item>La Uvita</item>
+        <item>La Victoria</item>
+        <item>Labranzagrande</item>
+        <item>Macanal</item>
+        <item>Maripí</item>
+        <item>Miraflores</item>
+        <item>Mongua</item>
+        <item>Monguí</item>
+        <item>Moniquirá</item>
+        <item>Motavita</item>
+        <item>Muzo</item>
+        <item>Nobsa</item>
+        <item>Nuevo Colón</item>
+        <item>Oicatá</item>
+        <item>Otanche</item>
+        <item>Pachavita</item>
+        <item>Páez</item>
+        <item>Paipa</item>
+        <item>Pajarito</item>
+        <item>Panqueba</item>
+        <item>Pauna</item>
+        <item>Paya</item>
+        <item>Paz de Río</item>
+        <item>Pesca</item>
+        <item>Pisba</item>
+        <item>Puerto Boyacá</item>
+        <item>Quípama</item>
+        <item>Ramiriquí</item>
+        <item>Ráquira</item>
+        <item>Rondón</item>
+        <item>Saboyá</item>
+        <item>Sáchica</item>
+        <item>Samacá</item>
+        <item>San Eduardo</item>
+        <item>San José de Pare</item>
+        <item>San Luis de Gaceno</item>
+        <item>San Mateo</item>
+        <item>San Miguel de Sema</item>
+        <item>San Pablo de Borbur</item>
+        <item>Santa María</item>
+        <item>Santa Rosa de Viterbo</item>
+        <item>Santa Sofía</item>
+        <item>Santana</item>
+        <item>Sativanorte</item>
+        <item>Sativasur</item>
+        <item>Siachoque</item>
+        <item>Soatá</item>
+        <item>Socha</item>
+        <item>Socotá</item>
+        <item>Sogamoso</item>
+        <item>Somondoco</item>
+        <item>Sora</item>
+        <item>Soracá</item>
+        <item>Sotaquirá</item>
+        <item>Susacón</item>
+        <item>Sutamarchán</item>
+        <item>Sutatenza</item>
+        <item>Tasco</item>
+        <item>Tenza</item>
+        <item>Tibaná</item>
+        <item>Tibasosa</item>
+        <item>Tinjacá</item>
+        <item>Tipacoque</item>
+        <item>Toca</item>
+        <item>Togüí</item>
+        <item>Tópaga</item>
+        <item>Tota</item>
+        <item>Tunja</item>
+        <item>Tununguá</item>
+        <item>Turmequé</item>
+        <item>Tuta</item>
+        <item>Tutazá</item>
+        <item>Úmbita</item>
+        <item>Ventaquemada</item>
+        <item>Villa de Leyva</item>
+        <item>Viracachá</item>
+        <item>Zetaquira</item>
+    </string-array>
+</resources>
