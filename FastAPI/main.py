@@ -2,7 +2,6 @@ import uvicorn
 from fastapi import FastAPI
 
 from controllers import user_controller, product_controller, auth_controller
-from services.db import get_db_connection
 
 app = FastAPI()
 
@@ -17,9 +16,6 @@ app.include_router(product_controller.router, prefix="/cart", tags=["Cart"])
 
 # Auth routes
 app.include_router(auth_controller.router, prefix="/auth", tags=["Authentication"])
-
-
-
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

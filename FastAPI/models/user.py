@@ -27,3 +27,16 @@ class User(BaseModel):
 class LoginRequest(BaseModel):
     email: str
     password: str
+
+class UserInfo(BaseModel):
+        email: str
+        first_name: str
+        last_name: str
+        doc_type: str
+        doc_number: str
+        phone_number: str
+        location: str
+
+class LoginRequest(BaseModel):
+        email: str
+        password: str

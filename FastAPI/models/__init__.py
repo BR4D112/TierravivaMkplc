@@ -1,5 +1,5 @@
-from pydantic import BaseModel, EmailStr
 from typing import List, Optional
+from pydantic import BaseModel, EmailStr
 
 
 # Modelos relacionados con productos
