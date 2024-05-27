@@ -80,22 +80,6 @@
         app:srcCompat="@drawable/logo_app" />
 
     <TextView
-        android:id="@+id/registerSesionText2"
-        android:layout_width="325dp"
-        android:layout_height="42dp"
-        android:gravity="center"
-        android:text="¡Hurra!"
-        android:textColor="#474747"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.478" />
-
-    <TextView
         android:id="@+id/registerSesionText3"
         android:layout_width="325dp"
         android:layout_height="42dp"
