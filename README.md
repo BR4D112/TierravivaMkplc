@@ -13,8 +13,7 @@ Marketplace enfocado en productores agricolas del departamento de Boyacá
 + Fernando Bohorquez Parra.
 
 ## TOOLS
-FastAPI 
 
-+ Backend - Python-> FastApi
-+ Frontend - Kotlin -> android studio 
++ Backend - Python-> FastApi, Uvicorn, Jose (Para JWT) 
++ Frontend - Kotlin, Android Studio, Gson, RetroFit 
 + Database - sql server
