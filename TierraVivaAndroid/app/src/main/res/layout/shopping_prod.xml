@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/text_font_box"
+    android:padding="8dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Product Name"
+        android:textSize="20sp"
+        android:textColor="#474747"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/productImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/productOwner"
+        android:layout_width="144dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="2dp"
+        android:text="User Name"
+        android:textColor="#474747"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/productImage"
+        app:layout_constraintTop_toBottomOf="@id/productName" />
+
+    <TextView
+        android:id="@+id/productLocation"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:paddingStart="2dp"
+        android:text="Product Location"
+        android:textColor="#474747"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/productOwner"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/prod_value"
+        android:text="Product Price \nCOP"
+        android:textAlignment="center"
+        android:textColor="#1C9708"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/productImage"
+        app:layout_constraintTop_toBottomOf="@+id/productOwner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

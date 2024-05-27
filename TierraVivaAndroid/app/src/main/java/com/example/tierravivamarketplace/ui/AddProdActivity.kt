@@ -1,5 +1,6 @@
 package com.example.tierravivamarketplace.ui
 
+import android.content.Intent
 import android.media.Image
 import android.os.Bundle
 import android.view.View
@@ -80,6 +81,8 @@ class AddProdActivity : AppCompatActivity() {
             println("imagen: ${image}")
             val product = ProductCreateRequest(id_categorie, id_measure_prod, product_name, unit_value, quantity, description, location, image)
             createProduct(product)
+
+
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -140,7 +143,8 @@ class AddProdActivity : AppCompatActivity() {
                 val response = RetrofitInstance.getAuthService(this@AddProdActivity).createProduct(product)
                 withContext(Dispatchers.Main) {
                     if (response.isSuccessful) {
-                        Toast.makeText(this@AddProdActivity, "Producto publicado exitosamente", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this@AddProdActivity, AddProdActivityII::class.java)
+                        startActivity(intent)
                     } else {
                         Toast.makeText(this@AddProdActivity, "Error al publicar el producto", Toast.LENGTH_SHORT).show()
                     }

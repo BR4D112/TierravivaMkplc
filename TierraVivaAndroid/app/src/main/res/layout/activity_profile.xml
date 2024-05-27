@@ -9,6 +9,9 @@
     android:background="#FFFFFF"
     tools:context=".ui.ProfileActivity">
 
+
+
+
     <TextView
         android:id="@+id/tierraVivaTitle2"
         android:layout_width="279dp"
@@ -31,11 +34,11 @@
         android:id="@+id/imageView6"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginEnd="232dp"
+        android:layout_marginEnd="248dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792"
+        app:layout_constraintVertical_bias="0.775"
         app:srcCompat="@drawable/circle2" />
 
     <ImageView
@@ -60,6 +63,122 @@
         app:layout_constraintVertical_bias="0.221"
         app:srcCompat="@drawable/circle2" />
 
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="416dp"
+        android:text="Email"
+        android:textColor="#474747"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLastname"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/firstNameTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="First Name"
+        android:textColor="#474747"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFirstname"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/lastNameTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Last Name"
+        android:textColor="#474747"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLastname"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/docTypeTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:text="Document Type"
+        android:textColor="#474747"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/imageViewDocType"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/docNumberTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:text="Document Number"
+        android:textColor="#474747"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/imageViewDocNum"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/phoneNumberTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="352dp"
+        android:text="Phone Number"
+        android:textColor="#474747"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoneNum"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:text="Location"
+        android:textColor="#474747"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLocation"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <ImageView
+        android:id="@+id/imageViewLocation"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863"
+        app:srcCompat="@drawable/ic_btn_text" />
+
     <Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -71,6 +190,157 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/textMyProfile"
+        android:layout_width="206dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="18dp"
+        android:text="Mi Perfil"
+        android:textColor="#474747"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
+    <ImageView
+        android:id="@+id/imageViewLastname"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFirstname"
+        app:layout_constraintVertical_bias="0.039"
+        app:srcCompat="@drawable/ic_btn_text" />
+
+    <ImageView
+        android:id="@+id/imageViewDocType"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLastname"
+        app:layout_constraintVertical_bias="0.051"
+        app:srcCompat="@drawable/ic_btn_text" />
+
+    <ImageView
+        android:id="@+id/imageViewFirstname"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295"
+        app:srcCompat="@drawable/ic_btn_text" />
+
+    <ImageView
+        android:id="@+id/imageViewDocNum"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDocType"
+        app:layout_constraintVertical_bias="0.043"
+        app:srcCompat="@drawable/ic_btn_text" />
+
+    <ImageView
+        android:id="@+id/imageViewPhoneNum"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDocNum"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/ic_btn_text" />
+
+    <ImageView
+        android:id="@+id/imageViewEmail"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPhoneNum"
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/ic_btn_text" />
+
+    <ImageView
+        android:id="@+id/imageViewNewUserName"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFirstname"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFirstname"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFirstname"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFirstname"
+        app:srcCompat="@drawable/user_icon" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewEmail"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewEmail"
+        app:layout_constraintStart_toStartOf="@+id/imageViewEmail"
+        app:layout_constraintTop_toTopOf="@+id/imageViewEmail"
+        app:srcCompat="@drawable/mail_logo" />
+
+    <ImageView
+        android:id="@+id/imageViewNewUserLastName"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewLastname"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewLastname"
+        app:layout_constraintStart_toStartOf="@+id/imageViewLastname"
+        app:layout_constraintTop_toTopOf="@+id/imageViewLastname"
+        app:srcCompat="@drawable/user_icon" />
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPhoneNum"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPhoneNum"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPhoneNum"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPhoneNum"
+        app:srcCompat="@drawable/phone_icon" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDocType"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDocType"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDocType"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDocType"
+        app:srcCompat="@drawable/no_doc_icon" />
+
+    <ImageView
+        android:id="@+id/imageViewDocNumber"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDocNum"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDocNum"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDocNum"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDocNum"
+        app:srcCompat="@drawable/no_doc_icon" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewLocation"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewLocation"
+        app:layout_constraintStart_toStartOf="@+id/imageViewLocation"
+        app:layout_constraintTop_toTopOf="@+id/imageViewLocation"
+        app:srcCompat="@drawable/location_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

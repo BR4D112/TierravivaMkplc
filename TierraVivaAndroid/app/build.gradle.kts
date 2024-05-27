@@ -34,6 +34,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
@@ -58,4 +62,8 @@ dependencies {
     implementation ("com.squareup.okhttp3:okhttp:4.9.0")
     implementation ("com.squareup.picasso:picasso:2.71828")
     implementation ("androidx.recyclerview:recyclerview:1.3.2")
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+    implementation ("androidx.core:core-ktx:1.7.0")
 }

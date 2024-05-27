@@ -17,11 +17,15 @@ class AddProdActivityII : AppCompatActivity() {
 
         val btn_back: Button = findViewById(R.id.back_to_menu)
         btn_back.setOnClickListener {
-            val intent: Intent = Intent(this, MainActivity::class.java)
+            val intent: Intent = Intent(this, UserLogged::class.java)
             startActivity(intent)
         }
 
         val btn_showMyPubs: Button = findViewById(R.id.show_my_pubs)
+        btn_showMyPubs.setOnClickListener {
+            val intent = Intent(this, MyPubsActivity::class.java)
+            startActivity(intent)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

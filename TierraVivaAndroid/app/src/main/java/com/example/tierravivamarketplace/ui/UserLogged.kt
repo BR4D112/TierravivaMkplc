@@ -1,5 +1,6 @@
 package com.example.tierravivamarketplace.ui
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -22,6 +23,9 @@ import com.example.tierravivamarketplace.io.response.Product
 import com.example.tierravivamarketplace.network.ProductService
 import com.example.tierravivamarketplace.network.RetrofitInstance
 import com.google.android.material.navigation.NavigationView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -41,10 +45,9 @@ class UserLogged : AppCompatActivity() {
         setContentView(R.layout.activity_user_logged)
 
         productService = RetrofitInstance.getProductService(this)
-        //
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = ProductAdapter(products)
+        adapter = ProductAdapter(this, products)
         recyclerView.adapter = adapter
 
         val spinnerCat = findViewById<Spinner>(R.id.spinner_categories_mainMenu)
@@ -103,6 +106,16 @@ class UserLogged : AppCompatActivity() {
                     true
                 }
 
+                R.id.nav_item_my_pub -> {
+                    startActivity(Intent(this, MyPubsActivity::class.java))
+                    true
+                }
+
+                R.id.nav_item_shop_car -> {
+                    startActivity(Intent(this, ShoppingCarActivity::class.java))
+                    true
+                }
+
                 R.id.nav_item_about_us -> {
                     startActivity(Intent(this, AboutUsActivity::class.java))
                     true
@@ -120,6 +133,7 @@ class UserLogged : AppCompatActivity() {
 
     private fun fetchProductsByCategory(idCategorie: Int) {
         productService.getProductsByCategorie(idCategorie).enqueue(object : Callback<List<Product>> {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call<List<Product>>, response: Response<List<Product>>) {
                 if (response.isSuccessful) {
                     products.clear()
@@ -134,6 +148,13 @@ class UserLogged : AppCompatActivity() {
         })
     }
 
+    private fun showErrorMessage(message: String) {
+        runOnUiThread {
+            android.widget.Toast.makeText(this@UserLogged, message, android.widget.Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    @Deprecated("This method has been deprecated in favor of using the\n      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.\n      The OnBackPressedDispatcher controls how back button events are dispatched\n      to one or more {@link OnBackPressedCallback} objects.")
     override fun onBackPressed() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Confirmación")

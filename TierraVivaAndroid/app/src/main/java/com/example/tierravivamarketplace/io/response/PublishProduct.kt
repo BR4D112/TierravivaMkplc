@@ -1,9 +1,9 @@
 package com.example.tierravivamarketplace.io.response
 
-data class Product(
+data class PublishProduct(
+    val id_publish_prod: Int,
     val id_product: Int,
-    val id_categorie: Int,
-    val id_measure_prod: Int,
+    val id_user: Int,
     val product_name: String,
     val unit_value: Float,
     val quantity: Float,

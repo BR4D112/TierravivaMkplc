@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/text_font_box"
+    android:layout_marginBottom="10dp"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/nombresTextOut"
+        android:layout_width="348dp"
+        android:layout_height="32dp"
+        android:text="Nombres"
+        android:textColor="#474747"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:text="User Name"
+        android:textAlignment="textStart"
+        android:textColor="#474747"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/nombresTextOut" />
+
+    <TextView
+        android:id="@+id/userLastName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:text="User LastName"
+        android:textAlignment="textStart"
+        android:textColor="#474747"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageLastName"
+        app:layout_constraintTop_toBottomOf="@+id/apellidosTextOut" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombresTextOut"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/imageLastName"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidosTextOut"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/imageLocation"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTextOut"
+        app:srcCompat="@drawable/location_ic" />
+
+    <ImageView
+        android:id="@+id/imageTypeDoc"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeDocTextOut"
+        app:srcCompat="@drawable/doc_ic" />
+
+    <ImageView
+        android:id="@+id/imageNumDoc"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numDocTextOut"
+        app:srcCompat="@drawable/doc_ic" />
+
+    <TextView
+        android:id="@+id/apellidosTextOut"
+        android:layout_width="348dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Apellidos"
+        android:textColor="#474747"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/locationTextOut"
+        android:layout_width="348dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Ubicación"
+        android:textColor="#474747"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userLastName" />
+
+    <TextView
+        android:id="@+id/userLocation"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:text="User Location"
+        android:textAlignment="textStart"
+        android:textColor="#474747"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageLocation"
+        app:layout_constraintTop_toBottomOf="@+id/locationTextOut" />
+
+    <TextView
+        android:id="@+id/typeDocTextOut"
+        android:layout_width="348dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Tipo de Documento"
+        android:textColor="#474747"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userLocation" />
+
+    <TextView
+        android:id="@+id/numDocTextOut"
+        android:layout_width="348dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Número de Documento"
+        android:textColor="#474747"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeDoc" />
+
+    <TextView
+        android:id="@+id/userTypeDoc"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:text="User DocType"
+        android:textAlignment="textStart"
+        android:textColor="#474747"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageTypeDoc"
+        app:layout_constraintTop_toBottomOf="@+id/typeDocTextOut" />
+
+    <TextView
+        android:id="@+id/userNumDoc"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:text="User DocNum"
+        android:textAlignment="textStart"
+        android:textColor="#474747"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageNumDoc"
+        app:layout_constraintTop_toBottomOf="@+id/numDocTextOut" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

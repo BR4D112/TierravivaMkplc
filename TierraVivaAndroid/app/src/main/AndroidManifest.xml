@@ -17,6 +17,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ui.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MyPubsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ShoppingCarActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.AboutUsActivity"
             android:exported="false" />
         <activity
