@@ -109,24 +109,10 @@
         app:layout_constraintVertical_bias="0.795" />
 
     <TextView
-        android:id="@+id/registerSesionText2"
-        android:layout_width="325dp"
-        android:layout_height="42dp"
-        android:gravity="center"
-        android:text="¡Hurra!"
-        android:textColor="#474747"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="0.083" />
-
-    <TextView
         android:id="@+id/registerSesionText3"
         android:layout_width="325dp"
         android:layout_height="42dp"
+        android:layout_marginBottom="240dp"
         android:gravity="center"
         android:text="Producto publicado"
         android:textColor="#474747"
@@ -135,7 +121,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerSesionText2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

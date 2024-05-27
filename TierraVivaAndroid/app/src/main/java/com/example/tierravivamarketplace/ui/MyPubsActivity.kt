@@ -13,7 +13,7 @@ import com.example.tierravivamarketplace.R
 import com.example.tierravivamarketplace.ui.adapters.MyPubsAdapter
 class MyPubsActivity : AppCompatActivity() {
 
-    private val viewModel: MyPubsViewModel by viewModels { MyPubsViewModelFactory(this) }
+    val viewModel: MyPubsViewModel by viewModels { MyPubsViewModelFactory(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +27,7 @@ class MyPubsActivity : AppCompatActivity() {
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        val adapter = MyPubsAdapter()
+        val adapter = MyPubsAdapter(this)
         recyclerView.adapter = adapter
 
         viewModel.myPubs.observe(this, Observer { publications ->
